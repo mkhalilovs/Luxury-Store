@@ -1,0 +1,532 @@
+main {
+  .btn-checkout,
+  .addToCart {
+    cursor: pointer;
+    padding: 8px;
+    background-color: goldenrod;
+    color: #36332c;
+    border-radius: 21px;
+    border: solid 0px;
+  }
+  .btn-checkout:hover {
+    background-color: #36332c;
+    color: goldenrod;
+  }
+  .addToCart:hover {
+    background-color: #36332c;
+    color: goldenrod;
+  }
+
+  .success-msg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    font-size: 26px;
+    a {
+      color: #a07200;
+    }
+  }
+
+  .increase,
+  .decrease {
+    border: solid 1px;
+    border-radius: 13px;
+    background-color: white;
+    cursor: pointer;
+    padding: 5px 10px 5px 10px;
+  }
+
+  .delete-btn {
+    background-color: #ef0b0b;
+    cursor: pointer;
+    color: white;
+    padding: 5px;
+    border: solid 1px black;
+    border-radius: 12px;
+  }
+  .delete-btn:hover {
+    background-color: darkred;
+  }
+  .increase:hover {
+    background-color: lightgray;
+  }
+  .decrease:hover {
+    background-color: lightgray;
+  }
+  img {
+    width: 300px;
+  }
+  .quote {
+    text-align: center;
+  }
+
+  div.trending__div {
+    .controller {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    div.images__div {
+      display: flex;
+      flex-direction: row;
+      overflow-x: auto;
+      overflow-y: hidden;
+      scroll-behavior: smooth;
+
+      img {
+        height: 250px;
+        margin-right: 30px;
+        margin-bottom: -18px;
+      }
+    }
+  }
+
+  .moreTo__content {
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .moreTo__men {
+    background-image: url('https://images.pexels.com/photos/3170635/pexels-photo-3170635.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  }
+  .moreTo__women {
+    background-image: url('https://images.pexels.com/photos/8100372/pexels-photo-8100372.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  }
+  .moreTo__jewelery {
+    background-image: url('https://images.pexels.com/photos/177332/pexels-photo-177332.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  }
+  .moreTo__electronics {
+    background-image: url('https://images.pexels.com/photos/8075346/pexels-photo-8075346.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  }
+
+  .moreTo__men,
+  .moreTo__women,
+  .moreTo__jewelery,
+  .moreTo__electronics {
+    height: 400px;
+    width: 290px;
+    background-size: cover;
+  }
+
+  .moreTo {
+    margin-top: 80px;
+
+    .moreTo__buttons {
+      margin-top: 315px;
+      margin-left: 50px;
+      div {
+        cursor: pointer;
+        user-select: none;
+        background-color: white;
+        width: fit-content;
+        margin-bottom: 7px;
+        border: solid 0px;
+        border-radius: 11px;
+        padding: 5px 16px 5px 13px;
+      }
+      :hover {
+        background-color: #ddd;
+      }
+
+      .moreTo__link {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .cart-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .cart-hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+
+  .cart-div-product {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    .cart-details {
+      margin-left: 100px;
+    }
+    img {
+      width: 170px;
+      height: 220px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    hr {
+      width: 50%;
+    }
+
+    .cart-div {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      justify-content: flex-start;
+    }
+
+    .hidden {
+      display: none;
+    }
+    .cart-div-product {
+      img {
+        margin-left: 13px;
+      }
+      .cart-details {
+        margin-left: 10px;
+      }
+    }
+    .trending__div {
+      margin: 10px;
+      .images__div .product__trending {
+        img {
+          width: 335px;
+          margin-right: 10px;
+          margin-bottom: -18px;
+        }
+      }
+      .controller {
+        a {
+          display: flex;
+          height: 20px;
+          width: 20px;
+          background: lightgray;
+          border-radius: 14px;
+          justify-content: center;
+        }
+        div {
+          display: flex;
+
+          a {
+            margin: 1px;
+          }
+        }
+      }
+    }
+    .moreTo {
+      margin-left: 10px;
+    }
+
+    .moreTo__content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .moreTo__men,
+    .moreTo__women,
+    .moreTo__jewelery,
+    .moreTo__electronics {
+      height: 210px;
+      width: 150px;
+      background-size: cover;
+      margin: 10px;
+
+      .moreTo__buttons {
+        margin-top: 150px;
+        margin-left: 9px;
+        font-size: 10px;
+        div {
+          cursor: pointer;
+          user-select: none;
+          background-color: white;
+          width: fit-content;
+          margin-bottom: 7px;
+          border: solid 0px;
+          border-radius: 11px;
+          padding: 5px;
+        }
+        :hover {
+          background-color: #ddd;
+        }
+
+        .moreTo__link {
+          color: #36332c;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .product_shirt,
+    .product_jacket,
+    .product_shirt--women,
+    .product_jacket--women,
+    .product_backpack,
+    .product_rings,
+    .product_earrings,
+    .product_bracelets,
+    .product_drives,
+    .product_screens {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      img {
+        width: 200px;
+        margin-top: 60px;
+      }
+    }
+    h4 {
+      text-align: center;
+    }
+  }
+
+  @media only screen and (min-width: 600px) {
+    hr {
+      width: 50%;
+    }
+
+    .trending__div {
+      margin: 10px;
+      .images__div .product__trending {
+        img {
+          width: 335px;
+          margin-right: 10px;
+          margin-bottom: -18px;
+        }
+      }
+      .controller {
+        a {
+          display: flex;
+          height: 20px;
+          width: 20px;
+          background: lightgray;
+          border-radius: 14px;
+          justify-content: center;
+        }
+        div {
+          display: flex;
+
+          a {
+            margin: 1px;
+          }
+        }
+      }
+    }
+
+    .moreTo {
+      margin-left: 10px;
+    }
+
+    .moreTo__content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .moreTo__men,
+    .moreTo__women,
+    .moreTo__jewelery,
+    .moreTo__electronics {
+      height: 210px;
+      width: 150px;
+      background-size: cover;
+      margin: 10px;
+
+      .moreTo__buttons {
+        margin-top: 150px;
+        margin-left: 9px;
+        font-size: 10px;
+        div {
+          cursor: pointer;
+          user-select: none;
+          background-color: white;
+          width: fit-content;
+          margin-bottom: 7px;
+          border: solid 0px;
+          border-radius: 11px;
+          padding: 5px;
+        }
+        :hover {
+          background-color: #ddd;
+        }
+
+        .moreTo__link {
+          color: #36332c;
+          text-decoration: none;
+        }
+      }
+    }
+    .product_shirt,
+    .product_jacket,
+    .product_shirt--women,
+    .product_jacket--women,
+    .product_backpack,
+    .product_rings,
+    .product_earrings,
+    .product_bracelets,
+    .product_drives,
+    .product_screens {
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      img {
+        width: 220px;
+        margin-top: 60px;
+      }
+    }
+    h4 {
+      margin-left: 30px;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    margin-left: 150px;
+    margin-right: 150px;
+
+    a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .prev,
+    .next {
+      user-select: none;
+      cursor: pointer;
+      background-color: #f1f1f1;
+      color: black;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      padding: 8px 16px;
+    }
+
+    .round {
+      border-radius: 50%;
+    }
+
+    .active {
+      border: solid 2px;
+    }
+
+    hr {
+      margin-bottom: 50px;
+    }
+    .quote {
+      text-align: center;
+      font-size: 40px;
+      margin-top: 110px;
+    }
+
+    h4 {
+      margin-top: 100px;
+    }
+    .product_shirt,
+    .product_jacket,
+    .product_shirt--women,
+    .product_jacket--women,
+    .product_backpack,
+    .product_rings,
+    .product_earrings,
+    .product_bracelets,
+    .product_drives,
+    .product_screens {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      width: 400px;
+      flex-wrap: nowrap;
+      .product {
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+    }
+    .hidden {
+      display: hidden;
+    }
+
+    .moreTo__content {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+
+    .moreTo__men {
+      background-image: url('https://images.pexels.com/photos/3170635/pexels-photo-3170635.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    }
+    .moreTo__women {
+      background-image: url('https://images.pexels.com/photos/8100372/pexels-photo-8100372.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    }
+    .moreTo__jewelery {
+      background-image: url('https://images.pexels.com/photos/177332/pexels-photo-177332.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    }
+    .moreTo__electronics {
+      background-image: url('https://images.pexels.com/photos/8075346/pexels-photo-8075346.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    }
+
+    .moreTo__men,
+    .moreTo__women,
+    .moreTo__jewelery,
+    .moreTo__electronics {
+      height: 400px;
+      width: 290px;
+      background-size: cover;
+    }
+
+    .moreTo {
+      margin-top: 80px;
+
+      .moreTo__buttons {
+        margin-top: 315px;
+        margin-left: 50px;
+        div {
+          cursor: pointer;
+          user-select: none;
+          background-color: white;
+          width: fit-content;
+          margin-bottom: 7px;
+          border: solid 0px;
+          border-radius: 11px;
+          padding: 10px 14px 6px 9px;
+          font-size: 15px;
+        }
+        :hover {
+          background-color: #ddd;
+        }
+
+        .moreTo__link {
+          color: #36332c;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .cart-div {
+      .cart-empty {
+        font-size: 40px;
+        text-align: center;
+      }
+    }
+  }
+
+  div.images__div::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  div.images__div::-webkit-scrollbar-thumb {
+    background-color: #36332c;
+    border-radius: 20px;
+  }
+}

@@ -1,0 +1,9 @@
+displayProducts(
+  `electronics`,
+  'drive',
+  'monitor',
+  'bracelet',
+  '.product_drives',
+  '.product_screens',
+  '.product_bracelets'
+);

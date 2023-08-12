@@ -1,0 +1,9 @@
+displayProducts(
+  `jewelery`,
+  'princess',
+  'pierce',
+  'bracelet',
+  '.product_rings',
+  '.product_earrings',
+  '.product_bracelets'
+);

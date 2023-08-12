@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Font Cinzel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel&family=Gruppo&family=Nunito:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="src/sass/main.css" />
+    <script defer src="src/js/slideshow.js"></script>
+    <script defer src="src/js/stickyNav.js"></script>
+    <script defer src="src/js/navigateToRightLeft.js"></script>
+    <script defer src="src/js/displayProducts.js"></script>
+    <script defer src="src/js/showMenu.js"></script>
+    <script defer src="src/js/search.js"></script>
+    <script defer src="src/js/addToCart.js"></script>
+    <title>Luxury Store - The Home Of The Shopaholic</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img src="/src/images/logo.png" alt="logo" class="header__logo" />
+        <ul class="ul">
+          <li><a href="src/pages/men.html">Men</a></li>
+          <li><a href="src/pages/women.html">Women</a></li>
+          <li><a href="src/pages/jewelery.html">Jewelery</a></li>
+          <li><a href="src/pages/electronics.html">Electronics</a></li>
+        </ul>
+        <div class="input-div">
+          <input
+            type="search"
+            class="search"
+            onkeyup="searchProduct()"
+            placeholder="Search here..."
+          />
+          <ul id="list">
+            <button class="addToCart" style="display: none"></button>
+          </ul>
+        </div>
+
+        <div class="icons">
+          <span class="material-symbols-outlined" id="menu"> menu </span>
+          <div class="inner_icons">
+            <a href="src/pages/cart.html">
+              <span class="material-symbols-outlined"> shopping_bag </span>
+              <p id="product-count"></p>
+            </a>
+          </div>
+        </div>
+
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span> <br />
+            <br />
+            <br />
+            <a href="src/pages/men.html">Men</a> <br />
+            <br />
+            <a href="src/pages/women.html">Women</a> <br />
+            <br />
+            <a href="src/pages/jewelery.html">Jewelery</a> <br />
+            <br />
+            <a href="src/pages/electronics.html">Electronics</a> <br />
+            <br />
+          </div>
+        </div>
+      </nav>
+      <p class="intro">The Home Of The Shopaholic</p>
+      <div class="preview">
+        <div class="preview__load">
+          <div class="preview__div"></div>
+          <div class="load"></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <p class="quote">
+        'Luxury is attention to detail, <br />
+        originality, exclusivity and above all quality.'<br />
+        -Angelo Bonati.
+      </p>
+      <hr />
+
+      <div class="trending__div">
+        <div class="controller">
+          <p>Trending this week</p>
+          <div>
+            <a class="prev round">&#8249;</a>
+            <a class="next round">&#8250;</a>
+          </div>
+        </div>
+
+        <br />
+        <div class="images__div">
+          <div class="product__trending">
+            <img
+              src="https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="bag"
+            />
+            <p>
+              Bags<br />
+              $24.99
+            </p>
+          </div>
+          <div class="product__trending">
+            <img
+              src="https://images.pexels.com/photos/297933/pexels-photo-297933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="shirt"
+            />
+            <p>
+              Shirts <br />
+              $29.99
+            </p>
+          </div>
+          <div class="product__trending">
+            <img
+              src="https://images.pexels.com/photos/2356344/pexels-photo-2356344.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="shirt"
+            />
+            <p>
+              T-shirts <br />
+              $34.99
+            </p>
+          </div>
+          <div class="product__trending">
+            <img
+              src="https://images.pexels.com/photos/298864/pexels-photo-298864.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="shoe"
+            />
+            <p>
+              Shoe Men<br />
+              $39.99
+            </p>
+          </div>
+          <div class="product__trending">
+            <img
+              src="https://images.pexels.com/photos/336372/pexels-photo-336372.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="women shoe"
+            />
+            <p>
+              Shoe Women<br />
+              $59.99
+            </p>
+          </div>
+          <div class="product__trending">
+            <img
+              src="https://images.pexels.com/photos/840916/pexels-photo-840916.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="coat"
+            />
+            <p>
+              Coats <br />
+              $49.99
+            </p>
+          </div>
+          <div class="product__trending">
+            <img
+              src="https://images.pexels.com/photos/210645/pexels-photo-210645.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="earring"
+            />
+            <p>
+              Earrings <br />
+              $99.99
+            </p>
+          </div>
+          <div class="product__trending">
+            <img
+              src="https://images.pexels.com/photos/2095953/pexels-photo-2095953.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="glasses"
+            />
+            <p>
+              Glasses <br />
+              $9.99
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="moreTo">
+        <p>More to Explore</p>
+        <div class="moreTo__content">
+          <div class="moreTo__men">
+            <div class="moreTo__buttons">
+              <div>
+                <a class="moreTo__link" href="src/pages/men.html">Men</a>
+              </div>
+            </div>
+          </div>
+          <div class="moreTo__women">
+            <div class="moreTo__buttons">
+              <div>
+                <a class="moreTo__link" href="src/pages/women.html">Women</a>
+              </div>
+            </div>
+          </div>
+          <div class="moreTo__jewelery">
+            <div class="moreTo__buttons">
+              <div>
+                <a class="moreTo__link" href="src/pages/jewelery.html"
+                  >Jewelery</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="moreTo__electronics">
+            <div class="moreTo__buttons">
+              <div>
+                <a class="moreTo__link" href="src/pages/electronics.html"
+                  >Electronics</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="location">Location: Canada</div>
+      <div>
+        Our story <br />
+        Privacy Policy <br />
+        Returns
+      </div>
+      <div class="last-footer">
+        About us <br />
+        Careers <br />
+        Contact us
+      </div>
+    </footer>
+  </body>
+</html>
